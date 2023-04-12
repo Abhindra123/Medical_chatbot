@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+.top {
+  background-image: url("https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif");
+  border: 10px double black;
+  background: lightblube;
+  border-collapse: collapse;
+  min-height: 100vh;
+}
+
+.chatbot-container {
+  position: relative;
+  margin: 40px;
+  background-color: #111010;
+  border-radius: 5px;
+  min-height: 90vh;
+  opacity: .9;
+}
+
+.chatbot-header {
+  text-align: center;
+  padding: 10px;
+  background-color: #111010;
+  color: #f6f4f4;
+  border-radius: 5px 5px 0 0;
+}
+
+.chatbot-header h1 {
+  margin: 0;
+}
+
+#myText{
+  color: #f6f4f4;
+  text-shadow: 0 0 20px white;
+  text-align: left;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+
+
+
+
+
+
+
+
+.chatbot-body {
+  height: 500px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  
+}
+
+.chatbot-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  color: snow;
+  text-shadow: 0 0 30px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bot-message {
+  color: greenyellow;
+  text-shadow: 0 0 30px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.chatbot-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111010;
+ 
+}
+.inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatbot-input input {
+  flex-grow: 1;
+  padding: 5px;
+  border:none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  min-width: 80vw;
+  margin-bottom: 10px;
+  color: crimson;
+  font-weight: 500;
+}
+
+.chatbot-input button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 60px;
+  font-size: 17px;
+  
+}
+
+.chatbot-input button:hover {
+  background-color: #555;
+}
+
+
+/* Media query for phone view */
+@media (max-width: 768px) {
+  .chatbot-container {
+    min-height: 100vh;
+    margin: 40px;
+    border-radius: 0;
+  }
+}
